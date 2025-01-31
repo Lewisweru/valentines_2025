@@ -21,8 +21,8 @@ const messages = [
 
 const gifs = [
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGNhdXh1b252b2F2b2U4cHRlNGkwMDZsajllaGF1cDJyb2p4NXl2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/G6N0pDDgDpLjUvNoyQ/giphy.gif",
-    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnBjMGZhZWZkcm5xZTEwZm5tMXl6aXNnYWdqM2FyYjU0aWVqaXJmNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FgBkUQ8VcnrtXGxhJD/giphy.gif",
-    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnZkaGpsczRidm03dmt2N2gzbWlnOHgwaDY2YzN6NGJmN21wazI4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hWA13JnjdnwPAk2e1h/giphy.gif",
+    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTVrYXJyMDFjNmUwa3E3cWZic2RqaG9seW9ndWh1MXR0MjJveHd1YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2NeUnAVoZ6Xt8ITvVn/giphy.gif",
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3A5YTllcWppYnZtbG4wOXBrYjBrOHNoMG1ydzN6anlvZWg5YzQxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FLdmIp6wJr91JAI/giphy.gif",
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDkycmhiZTBwN3dmczR4eHBqcmJkNHFvYm5td2FoMDZrdjkxZzBhaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"
 ];
 
