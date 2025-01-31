@@ -3,13 +3,33 @@ const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 
-// Change text and gif when the Yes button is clicked
-yesBtn.addEventListener("click", () => {
-    question.innerHTML = "Being with you is my biggest blessing. I love you.";
-    gif.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGNhdXh1b252b2F2b2U4cHRlNGkwMDZsajllaGF1cDJyb2p4NXl2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/G6N0pDDgDpLjUvNoyQ/giphy.gif";
+// Array of messages and GIFs
+const messages = [
+    "Being with you is my biggest blessing. I love you. ❤️",
+    "You are my happiness, my everything. 💖",
+    "I can't imagine life without you. You're my world! 🌍💑"
+];
 
-    // Hide the No button
-    noBtn.style.display = "none";
+const gifs = [
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGNhdXh1b252b2F2b2U4cHRlNGkwMDZsajllaGF1cDJyb2p4NXl2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/G6N0pDDgDpLjUvNoyQ/giphy.gif",
+    "https://media.giphy.com/media/3oz8xOlnSizBfBxlHy/giphy.gif",
+    "https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif"
+];
+
+let clickCount = 0; // Track clicks
+
+yesBtn.addEventListener("click", () => {
+    // Update text and GIF based on the click count
+    question.innerHTML = messages[clickCount];
+    gif.src = gifs[clickCount];
+
+    // Hide the No button after first click
+    if (clickCount === 0) {
+        noBtn.style.display = "none";
+    }
+
+    // Increment click count, but reset to 0 after third click
+    clickCount = (clickCount + 1) % messages.length;
 });
 
 // Make the No button move randomly on hover
