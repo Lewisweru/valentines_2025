@@ -1,4 +1,4 @@
-/* General Page Styling */
+style.css */
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Wrapper Box */
 .wrapper {
     position: relative;
     width: 90%;
@@ -23,7 +22,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Question Text */
 .question {
     font-size: 24px;
     font-weight: bold;
@@ -31,7 +29,6 @@ body {
     color: #333;
 }
 
-/* GIF Styling */
 .gif {
     max-width: 100%;
     height: auto;
@@ -40,18 +37,12 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Button Group */
 .btn-group {
     display: flex;
-    justify-content: space-between; /* Keep buttons apart */
-    gap: 30px;
-    width: 100%;
-    max-width: 300px; /* Controls button width */
-    margin: 20px auto 0;
-    position: relative;
+    justify-content: space-around;
+    gap: 15px;
 }
 
-/* General Button Styling */
 button {
     padding: 12px 30px;
     font-size: 18px;
@@ -66,13 +57,10 @@ button:focus {
     outline: none;
 }
 
-/* YES Button */
 .yes-btn {
     background-color: #4caf50;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    flex: 1; /* Ensure equal space */
-    text-align: center;
 }
 
 .yes-btn:hover {
@@ -80,39 +68,32 @@ button:focus {
     transform: scale(1.05);
 }
 
-/* NO Button */
 .no-btn {
+    position: absolute;
     background-color: #ff4d4d;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: absolute; /* Allows movement */
-    left: 50%; /* Start near the center */
-    transform: translateX(-50%);
-    flex: 1;
-    text-align: center;
 }
 
 .no-btn:hover {
     background-color: #e43e3e;
     transform: scale(1.05);
 }
-
-/* Reset Button */
 .reset-btn {
-    display: none; /* Initially hidden */
-    background-color: #008CBA;
-    color: white;
-    margin-top: 20px;
-    padding: 12px 30px;
-    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .reset-btn:hover {
-    background-color: #0073a7;
+    background-color: #0056b3;
     transform: scale(1.05);
 }
