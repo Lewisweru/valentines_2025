@@ -2,6 +2,14 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
+const wrapper = document.querySelector(".wrapper");
+
+// Create the Reset button (hidden initially)
+const resetBtn = document.createElement("button");
+resetBtn.textContent = "Reset";
+resetBtn.classList.add("reset-btn");
+resetBtn.style.display = "none"; // Hidden by default
+wrapper.appendChild(resetBtn); // Add Reset button to the wrapper
 
 // Array of messages and GIFs
 const messages = [
@@ -23,18 +31,33 @@ yesBtn.addEventListener("click", () => {
     question.innerHTML = messages[clickCount];
     gif.src = gifs[clickCount];
 
-    // Hide the No button after first click
+    // Hide the No button after the first click
     if (clickCount === 0) {
         noBtn.style.display = "none";
     }
 
-    // Increment click count, but reset to 0 after third click
-    clickCount = (clickCount + 1) % messages.length;
+    // Show Reset button after the last message
+    if (clickCount === messages.length - 1) {
+        resetBtn.style.display = "block"; // Show Reset button
+        yesBtn.style.display = "none"; // Hide Yes button
+    }
+
+    // Increment click count but prevent overflow
+    clickCount = Math.min(clickCount + 1, messages.length - 1);
+});
+
+// Reset everything when Reset button is clicked
+resetBtn.addEventListener("click", () => {
+    clickCount = 0;
+    question.innerHTML = "Do you love me?";
+    gif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjJvdWZzYXc1NGJ6aGp1cDE3b2dyNnVzOGN1andkMjVrMmRzeGwwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3OhXBaoR1tVPW/giphy.gif";
+    yesBtn.style.display = "block"; // Show Yes button
+    noBtn.style.display = "block"; // Show No button
+    resetBtn.style.display = "none"; // Hide Reset button
 });
 
 // Make the No button move randomly on hover
 noBtn.addEventListener("mouseover", () => {
-    const wrapper = document.querySelector(".wrapper");
     const wrapperRect = wrapper.getBoundingClientRect();
     const noBtnRect = noBtn.getBoundingClientRect();
 
@@ -42,7 +65,7 @@ noBtn.addEventListener("mouseover", () => {
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
-    // Ensure randomX and randomY are within the wrapper bounds
+    // Generate random positions within the wrapper
     const randomX = Math.min(Math.floor(Math.random() * maxX), maxX);
     const randomY = Math.min(Math.floor(Math.random() * maxY), maxY);
 
