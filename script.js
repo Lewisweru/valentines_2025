@@ -15,8 +15,8 @@ wrapper.appendChild(resetBtn); // Add Reset button to the wrapper
 const messages = [
     "Being with you is my biggest blessing. I love you. ❤️",
     "You are my happiness, I want to spend the rest of my life with you. 💍💖",
-    "I can't imagine life without you. You're my world! 🌍💑",
-    "You bring colour into my world 💐🌻🌷"
+    "You're my world! 🌍💑",
+    "You bring colour into my world 💜I love you.🌷"
 ];
 
 const gifs = [
