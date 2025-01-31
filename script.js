@@ -12,8 +12,8 @@ const messages = [
 
 const gifs = [
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGNhdXh1b252b2F2b2U4cHRlNGkwMDZsajllaGF1cDJyb2p4NXl2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/G6N0pDDgDpLjUvNoyQ/giphy.gif",
-    "https://media.giphy.com/media/3oz8xOlnSizBfBxlHy/giphy.gif",
-    "https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif"
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnBjMGZhZWZkcm5xZTEwZm5tMXl6aXNnYWdqM2FyYjU0aWVqaXJmNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FgBkUQ8VcnrtXGxhJD/giphy.gif",
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnZkaGpsczRidm03dmt2N2gzbWlnOHgwaDY2YzN6NGJmN21wazI4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hWA13JnjdnwPAk2e1h/giphy.gif"
 ];
 
 let clickCount = 0; // Track clicks
